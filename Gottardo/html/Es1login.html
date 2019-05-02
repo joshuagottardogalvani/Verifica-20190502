@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benvenuto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 15px;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+        .titolo {
+            text-transform: uppercase;
+        }
+        input{
+            padding:0.2em;
+            margin:1em;
+            width: 200px;
+        }
+        fieldset {
+            width: 40%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titolo">XFactor</h1>
+        <p>Login</p>
+        <form action="/jsp/Es1login.jsp" method="post">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
